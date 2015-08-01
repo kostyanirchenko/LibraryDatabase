@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Library:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Library_jar</output-path>
+    <root id="archive" name="Personal Task.jar">
+      <element id="module-output" name="Personal Task" />
+      <element id="extracted-dir" path="E:/Download/controlsfx-8.0.6_20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/MySQL/Connector.J 5.1/src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/MySQL/Connector.J 5.1/mysql-connector-java-5.1.35-bin.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

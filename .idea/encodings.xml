@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/src/Controllers/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controllers/views/library/LibraryController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controllers/views/library/add/AddController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controllers/views/library/edit/EditController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controllers/views/menu/MenuController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Models/Database.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Models/Validate.java" charset="UTF-8" />
+  </component>
+</project>
