@@ -13,11 +13,37 @@ import java.sql.*;
  */
 public class Database {
     public static Connection connection;
-    public static final String url = "jdbc:mysql://localhost:3306/test";
+    private static String url = "";
+    private static String login = "";
+    private static String pass = "";
     public static Statement statement;
     public static ResultSet resultSet;
     public static PreparedStatement preparedStatement;
 
+
+    public static void setUrl(String inUrl) {
+        url = inUrl;
+    }
+
+    public static String getUrl() {
+        return url;
+    }
+
+    public static void setLogin(String inLogin) {
+        login = inLogin;
+    }
+
+    public static String getLogin() {
+        return login;
+    }
+
+    public static void setPass(String inPass) {
+        pass = inPass;
+    }
+
+    public static String getPass() {
+        return pass;
+    }
     /**
      * Проверяет, установлено ли соединение с базой данных.
      *
