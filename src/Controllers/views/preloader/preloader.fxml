@@ -4,8 +4,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.views.preloader.LibraryPreloader">
    <children>
       <GridPane prefHeight="90.0" prefWidth="300.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
         <columnConstraints>
@@ -21,17 +20,18 @@
             <Label text="Url" />
             <Label text="Login" GridPane.rowIndex="1" />
             <Label text="Password" GridPane.rowIndex="2" />
-            <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="1" />
+            <PasswordField fx:id="passField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="loginField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="urlField" GridPane.columnIndex="1" />
          </children>
       </GridPane>
       <Label layoutX="14.0" layoutY="14.0" prefHeight="90.0" prefWidth="290.0" text="Добро пожаловать в Базу данных персональной&#10;библиотеки.&#10;Пожалуйста, авторизируйтесь.&#10;Укажите Url БД для подключения, логин и пароль&#10;к БД" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0" />
       <HBox layoutX="118.0" layoutY="216.0" spacing="10.0">
          <children>
-            <Button layoutX="150.0" layoutY="217.0" mnemonicParsing="false" text="Подключиться" />
-            <Button layoutX="202.0" layoutY="217.0" mnemonicParsing="false" text="Выход" />
+            <Button fx:id="connectButton" layoutX="150.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleConnect" text="Подключиться" />
+            <Button fx:id="exitButton" layoutX="202.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleExit" text="Выход" />
          </children>
       </HBox>
+      <ProgressBar fx:id="bar" layoutX="50.0" layoutY="278.0" prefWidth="200.0" progress="0.0" />
    </children>
 </AnchorPane>
